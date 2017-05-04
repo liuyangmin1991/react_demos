@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="../build/react.js"></script>
+    <script src="../build/react-dom.js"></script>
+    <script src="../build/browser.min.js"></script>
+</head>
+<body>
+<div id="example"></div>
+<script type="text/babel">
+
+
+    var names = ['火火', '杨敏', '杨峰', '江招', '海霞'];
+    var ages = [1, 26, 29, 23, 24];
+    var foods = ['小龙虾','土豆','鱼','螃蟹','苹果'];
+
+    var name='杨敏';
+
+    var name=names[3];
+
+
+    // 火火的年龄是1岁
+
+    // 火火的年龄是1岁,喜欢吃的食物是小龙虾
+
+    var rows = [];
+
+    for (var i = 0; i < names.length; i++) {
+        var name =names[i];
+        var age=ages[i];
+        var food=foods[i];
+        //
+        rows.push(<div key={i}>{name}的年龄是{age},喜欢吃的食物是{food}</div>);
+    }
+
+
+
+    var rows = [];
+
+    for (var i = 0; i < names.length; i++) {
+        var name =names[i];
+        var age=ages[i];
+        var food=foods[i];
+        //
+        rows.push(<div key={i}>{name}的年龄是{age},喜欢吃的食物是{food}</div>);
+    }
+
+
+    
+
+    ReactDOM.render(
+            <div>
+                {rows}
+            </div>,
+        document.getElementById('example')
+    );
+
+</script>
+</body>
+</html>

@@ -1,25 +1,89 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
+    <meta charset="utf-8">
     <script src="../build/react.js"></script>
     <script src="../build/react-dom.js"></script>
     <script src="../build/browser.min.js"></script>
-  </head>
-  <body>
-    <div id="example"></div>
-    <script type="text/babel">
-      var names = ['Alice', 'Emily', 'Kate'];
+</head>
+<body>
+<div id="example"></div>
+<script type="text/babel">
 
-      ReactDOM.render(
-        <div>
-        {
-          names.map(function (name) {
-            return <div>Hello, {name}!</div>
-          })
+    function jia_shi(input1,input2) {
+
+        var number=10;
+        var he=input1+input2+number;
+
+        return he;
+
+    }
+
+  var number1=jia_shi(1,2);
+
+
+
+
+    var numbers = [1, 2, 3, 4, 5,6,8];
+
+    function suan_qian(input1) {
+
+        var result=0;
+
+        for (var i = 0; i < input1.length; i++) {
+            result=result+ input1[i];
         }
-        </div>,
+        return '共计：'+result+'元';
+
+    }
+
+
+   var quanshu= suan_qian(numbers);
+
+console.log(quanshu);
+
+    
+
+
+
+    // 变量名
+    //数据类型
+    //数组 是用中括号 [] 包起来的结构
+
+
+    var names = ['火火', '杨敏', '杨峰', '江招', '海霞'];
+
+
+    var ages = [1, 26, 29, 23, 24];
+
+
+    // 火火的年龄是1岁
+
+    for (var i = 0; i <10; i++) {
+
+        console.log('火火');
+
+
+    }
+
+
+
+    console.log(names[0]);
+    console.log(names[3]);
+
+    ReactDOM.render(
+            <div>
+                {
+                    names.map(function (name, index) {
+              console.log(index);
+              console.log(name);
+                        return <div key={index}>您好, {name}，您是第{index + 1}位!</div>
+                    })
+                }
+            </div>,
         document.getElementById('example')
-      );
-    </script>
-  </body>
+    );
+
+</script>
+</body>
 </html>
