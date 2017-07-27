@@ -10,70 +10,66 @@
 <div id="example"></div>
 <script type="text/babel">
 
-    function jia_shi(input1,input2) {
+//     function jia_shi(input1,input2) {
 
-        var number=10;
-        var he=input1+input2+number;
+//         var number=10;
+//         var he=input1+input2+number;
 
-        return he;
+//         return he;
 
-    }
+//     }
 
-  var number1=jia_shi(1,2);
-
-
+//   var number1=jia_shi(1,2);
 
 
-    var numbers = [1, 2, 3, 4, 5,6,8];
-
-    function suan_qian(input1) {
-
-        var result=0;
-
-        for (var i = 0; i < input1.length; i++){
-            result=result+ input1[i];
-        }
-        return '共计：'+result+'元';
-
-    }
 
 
-   var quanshu= suan_qian(numbers);
+//     var numbers = [1, 2, 3, 4, 5,6,8];
 
-console.log(quanshu);
+//     function suan_qian(input1) {
+
+//         var result=0;
+
+//         for (var i = 0; i < input1.length; i++){
+//             result=result+ input1[i];
+//         }
+//         return '共计：'+result+'元';
+
+//     }
+
+
+//    var quanshu= suan_qian(numbers);
+
+// console.log(quanshu);
 
     
 
 
-
+    // 爸爸的爱好是打篮球
     // 变量名
     //数据类型 
     //数组 是用中括号 [] 包起来的结构
 
+   var name2=['爸爸','妈妈', '爷爷', '奶奶','我','弟弟','妹妹'];
+   var hobby1=['打球', '做菜', '写字', '阅读', '旅游', '玩游戏', '画画'];
+ 
+   name2.push('杨峰');
+   hobby1.push('滑板');
+
+ 
+
+      var rows=[];
+      for(var i =0;i<name2.length;i++){
+          var nameM=name2[i];
+          var hobbyM=hobby1[i];
+ rows.push(<div key={i} >{nameM}的爱好是{hobbyM}</div>);
+      }
 
 
-    var name1=['爸爸'，'妈妈', '爷爷', '奶奶', '我'，'弟弟'，'妹妹']；
-    var hobby0=['打球', '做菜', '写字', '阅读', '旅游', '玩游戏', '画画'];
     
-    //  爸爸的爱好是打球
-
-    var rows = [];
-
-    for(var i =0;i<name1.length;i+++){
-        var name=name1[i];
-        var hoby=hobby0[i];
-
-    }
-
   ReactDOM.render(
             <div>
-                {
-                    names.map(function (name, index) {
-              console.log(index);
-              console.log(name);
-                        return <div key={index}>您好, {name}，您是第{index + 1}位!</div>
-                    })
-                }
+                {rows}
             </div>,
         document.getElementById('example')
     );
@@ -83,41 +79,39 @@ console.log(quanshu);
 
 
 
-
-
-    var names = ['火火', '杨敏', '杨峰', '江招', '海霞'];
-
-
-    var ages = [1, 26, 29, 23, 24];
-
-
-    // 火火的年龄是1岁
-
-    for (var i = 0; i <10; i++) {
-
-        console.log('火火');
-
-
-    }
-
-
-
-    console.log(names[0]);
-    console.log(names[3]);
-
-    ReactDOM.render(
-            <div>
-                {
-                    names.map(function (name, index) {
-              console.log(index);
-              console.log(name);
-                        return <div key={index}>您好, {name}，您是第{index + 1}位!</div>
-                    })
-                }
-            </div>,
-        document.getElementById('example')
-    );
+ 
 
 </script>
 </body>
 </html>
+    
+    
+    
+    
+    
+<!--     
+    
+//     var name1=['爸爸','妈妈', '爷爷', '奶奶','我','弟弟','妹妹'];
+//     var hobby0=['打球', '做菜', '写字', '阅读', '旅游', '玩游戏', '画画'];
+
+//     name1.push('杨峰');
+//     hobby0.push('滑板');
+
+// console.log(name1);
+
+
+//     //  爸爸的爱好是打球
+
+//     var rows = [];
+
+//     for(var i =0;i<name1.length;i++){
+//         var name=name1[i];
+//         var hobby=hobby0[i];
+
+//         //爸爸的爱好是打球
+//      rows.push(<div key={i} >{name}的爱好是{hobby}</div>);
+
+//     }
+    
+ -->
+
