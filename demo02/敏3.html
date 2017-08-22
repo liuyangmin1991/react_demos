@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="../build/react.js"></script>
+    <script src="../build/react-dom.js"></script>
+    <script src="../build/browser.min.js"></script>
+</head>
+<body>
+<div id="example"></div>
+<script type="text/babel">
+
+
+//   总结步骤：
+//   1.用var定义个变量 相当于一个盒子
+//   2.给盒子取名字 = 是赋值
+//
+//    3. var rows =[]拿出这个容器，准备装东西
+//    4.建立for 循环 语法
+//    rows.push  把盒子放进来
+//   5.输出结果 rows
+//
+
+       var jingdianmingzhu=['包法利夫人', '茶花女', '钢铁是怎样炼成的', '钢铁是怎样炼成的'];
+       var duiyingzuozhe=['福楼拜', '小仲马', '尼·奥斯特洛夫斯基 ', '莎士比亚'];
+
+       //
+       var rows1=[];
+
+       for(var i =0; i<jingdianmingzhu.length; i++){
+
+    var hezi1 = jingdianmingzhu[i];
+    var hezi2 = duiyingzuozhe[i];
+
+    rows1.push(<div key={i} >{hezi1}的作者是{hezi2}</div>);
+
+}
+
+
+       var name3=['红彤彤', '绚丽多彩','五光十色','川流不息', '华灯高照'];
+       var c=['太阳','广告', '霓虹灯','汽车','城市'];
+
+       name3.push('活泼可爱');
+       c.push('小白兔');
+
+       var rows=[];
+       for(var i =0; i<name3.length;i++){
+           var heziAzhuang=name3[i];
+           var heziBzhuang=c[i];
+           rows.push(<div key={i} >{heziAzhuang}的{heziBzhuang}</div>);
+
+       }
+
+
+       ReactDOM.render(
+               <div>
+                   {rows1}
+                   {rows}
+               </div>,
+           document.getElementById('example')
+       );
+
+
+
+</script>
+</body>
+</html>
+    
+    
+    
+    
+    
+<!--     
+    
+//     var name1=['爸爸','妈妈', '爷爷', '奶奶','我','弟弟','妹妹'];
+//     var hobby0=['打球', '做菜', '写字', '阅读', '旅游', '玩游戏', '画画'];
+
+//     name1.push('杨峰');
+//     hobby0.push('滑板');
+
+// console.log(name1);
+
+
+//     //  爸爸的爱好是打球
+
+//     var rows = [];
+
+//     for(var i =0;i<name1.length;i++){
+//         var name=name1[i];
+//         var hobby=hobby0[i];
+
+//         //爸爸的爱好是打球
+//      rows.push(<div key={i} >{name}的爱好是{hobby}</div>);
+
+//     }
+    
+ -->
+
