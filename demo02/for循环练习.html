@@ -16,17 +16,14 @@
         //    [4,2,1,2,3,6,8]
 
 
-        var qiuhe = [4, 2, 1, 2, 3, 6, 8];
-
-
-
-
-
-
-
-
+        var qiuhe = [4, 2, 1];
+        var box1 = 0;
+        for (var i = 0; i < qiuhe.length; i++) {
+            box1 = box1 + qiuhe[i];
+        }
 
         //   alert(box1);
+        //        document.write('box1的值：' + box1 + '<br>');
 
 
         //    qiuhe[0]
@@ -42,6 +39,12 @@
         // 第一步  定义这个数组
         // 然后 我要 拿一个桶 来装 需要求的和
         // 使用 for 循环 来 处理这个数组   找到 奇数序号 的值  并 加起来 放到 桶里
+        var shuzu = [1, 2, 3, 4, 5, 6, 7];
+        var box2 = 0;
+        for (var i = 0; i < shuzu.length; i = i + 2) {
+            box2 = box2 + shuzu[i];
+        }
+        document.write('box2的值：' + box2 + '<br>');
 
 
         var name_list = ['爸爸', '妈妈', '爷爷', '奶奶', '我', '弟弟', '妹妹'];
@@ -50,33 +53,34 @@
         name_list.push('杨峰');
         hobby_list.push('滑板');
 
+
+        name = 0;
+        hobby = 0;
+
+
+        for (var i = 0; i < name_list.length; i++) {
+            name = name_list[i];
+            hobby = hobby_list[i];
+            document.write(name + '的爱好是：' + hobby + '<br>');
+        }
+
         //          显示每个人对应的爱好
-        document.write(name + '的爱好是：' + hobby + '<br>');
-
-
-
-
-
-
-
-
-
-
-
 
 
         var shuzi_list_1 = [3, 4, 7, 5, 8];
         var shuzi_list_2 = [2, 7, 2, 8, 9];
 
-//        document.write(shuzi1 + '加上' + shuzi2 + '的和：' + sum + '<br>');
 
+        shuzi1 = 0;
+        shuzi2 = 0;
+        sum = 0;
 
-
-
-
-
-
-
+        for (var i = 0; i < shuzi_list_1.length; i++) {
+            shuzi1 = shuzi_list_1[i];
+            shuzi2 = shuzi_list_2[i];
+            sum = shuzi1 + shuzi2;
+            document.write(shuzi1 + '加上' + shuzi2 + '的和：' + sum + '<br>');
+        }
 
 
         //  第一题： 从 1开始 将 100及以内的所有的偶数  放入到一个数组中
@@ -84,37 +88,18 @@
         //  第一题： 从 1开始 将 100及以内的所有的奇数  放入到一个数组中
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         // 找出 数组中 所有的奇数 并 显示出来
 
         var list = [4, 7, 8, 4, 5, 8, 665, 4, 32, 6575, 3, 22, 2, 325, 6, 7, 3];
+       for(i=0;i<list.length;i++){
+         var  shuzuou=list[i];
 
+           if(shuzuou%2==1){
+               document.write(  shuzuou + '是奇数<br>');
+           }else{
 
-
+           }
+       }
 
     </script>
 </head>
