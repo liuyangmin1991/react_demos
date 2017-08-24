@@ -21,9 +21,7 @@
         for (var i = 0; i < qiuhe.length; i++) {
             box1 = box1 + qiuhe[i];
         }
-
-        //   alert(box1);
-        //        document.write('box1的值：' + box1 + '<br>');
+        document.write('box1的值：' + box1 + '<br>');
 
 
         //    qiuhe[0]
@@ -42,7 +40,7 @@
         var shuzu = [1, 2, 3, 4, 5, 6, 7];
         var box2 = 0;
         for (var i = 0; i < shuzu.length; i = i + 2) {
-            box2 = box2 + shuzu[i];
+            box2 = shuzu[i] + i;
         }
         document.write('box2的值：' + box2 + '<br>');
 
@@ -53,16 +51,14 @@
         name_list.push('杨峰');
         hobby_list.push('滑板');
 
-
-        name = 0;
-        hobby = 0;
-
-
+        var name = 0;
+        var hobby = 0;
         for (var i = 0; i < name_list.length; i++) {
             name = name_list[i];
             hobby = hobby_list[i];
             document.write(name + '的爱好是：' + hobby + '<br>');
         }
+
 
         //          显示每个人对应的爱好
 
@@ -71,15 +67,20 @@
         var shuzi_list_2 = [2, 7, 2, 8, 9];
 
 
-        shuzi1 = 0;
-        shuzi2 = 0;
+        var shuizi1 = 0;
+        shuizi2 = 0;
         sum = 0;
 
+
         for (var i = 0; i < shuzi_list_1.length; i++) {
-            shuzi1 = shuzi_list_1[i];
-            shuzi2 = shuzi_list_2[i];
-            sum = shuzi1 + shuzi2;
-            document.write(shuzi1 + '加上' + shuzi2 + '的和：' + sum + '<br>');
+            shuizi1 = shuzi_list_1[i];
+            shuizi2 = shuzi_list_2[i];
+
+
+            sum = shuzi_list_1[i] + shuzi_list_2[i];
+
+
+            document.write(shuizi1 + '加上' + shuizi2 + '的和：' + sum + '<br>');
         }
 
 
@@ -90,17 +91,77 @@
 
         // 找出 数组中 所有的奇数 并 显示出来
 
+        //        var list = [4, 7, 8, 4, 5, 8, 665, 4, 32, 6575, 3, 22, 2, 325, 6, 7, 3];
+        //        var shuzuou=0;   shuzuou2=0
+        //        for (var i=0;i<list.length;i++){
+        //            document.write("第"+(i+1)+"次循环前：" + shuzuou +'<br>');
+        //            if (list[i]%2==1){
+        //                document.write("shuzuou被赋值");
+        //                shuzuou =list [i];
+        //
+        //            document.write(  shuzuou + '是奇数<br>');
+        //         } else{
+        //
+        //             list[i]%2==0;
+        //
+        //             document.write(  shuzuou + '是ou数<br>');
+        //         }
+        //
+        //
+        //        }
+
+
         var list = [4, 7, 8, 4, 5, 8, 665, 4, 32, 6575, 3, 22, 2, 325, 6, 7, 3];
-       for(i=0;i<list.length;i++){
-         var  shuzuou=list[i];
+        var shuzuou = 0;
+        shuzuou2 = 0;
+        for (var i = 0; i < list.length; i++) {
+            shuzuou = list[i];
 
-           if(shuzuou%2==1){
-               document.write(  shuzuou + '是奇数<br>');
-           }else{
 
-           }
-       }
+            if (list[i] % 2 == 1) {
 
+
+                document.write(shuzuou + '是奇数<br>');
+            } else {
+
+                list[i] % 2 == 0;
+
+                document.write(shuzuou + '是ou数<br>');
+            }
+
+
+        }
+
+
+        var list = [4, 7, 8, 4, 5, 8, 665, 4, 32, 6575, 3, 22, 2, 325, 6, 7, 3];
+        var shuzuou = 0;
+        shuzuou2 = 0;
+        for (var i = 0; i < list.length; i++) {
+
+
+            if (list[i] % 2 == 1) {
+                shuzuou = list[i];
+
+                document.write(shuzuou + '是奇数<br>');
+
+
+            } else {
+
+
+                shuzuou2 = list[i];
+                document.write(shuzuou2 + '是ou数<br>');
+            }
+
+
+        }
+
+
+        var list = [4, 7, 8, 4, 5, 8, 665, 4, 32, 6575, 3, 22, 2, 325, 6, 7, 3];
+        var box3 = 0;
+        for (var i = list.length - 5; i < list.length; i++) {
+            box3 =list[i]+box3;
+        }
+        document.write(box3 + '是和<br>');
     </script>
 </head>
 <body>
