@@ -11,77 +11,103 @@
 
         // 第一步  定义这个数组
         // 然后 我要 拿一个桶 来装 需要求的和
-        // 使用 for 循环 来 处理这个数组   找到 每一个元素  并 加起来 放到 桶里
+        // 使用 for 循环 来 处理这个数组
+        // 找到 每一个元素  并 加起来 放到 桶里
 
         //    [4,2,1,2,3,6,8]
+        //
+        //
+        //        var list = [4, 2, 1];
+        //        var box1 = 0;
+        //        for (var i = 0; i < list.length; i++) {
+        //            box1 = box1 + list[i];
 
+        //        }
+        //        当i=0的时候，list[i]是4，box1=0;那么左边的box1是4，当list[i]是2，加上box1是4，所以左边的box1等于6..........
+        //        document.write('box1的值：' + box1 + '<br>');
+        //
 
-        var qiuhe = [4, 2, 1];
-        var box1 = 0;
-        for (var i = 0; i < qiuhe.length; i++) {
-            box1 = box1 + qiuhe[i];
-        }
-        document.write('box1的值：' + box1 + '<br>');
+        //
+        //
+        //            qiuhe[0]
+        //            qiuhe[1]
+        //
+        //         这是 数组赋值
+        //            qiuhe[0]=10;
+        //
+        //
+        //         我有一个数组  [1,2,3,4,5,6,7]
+        //         我要计算 数组中 序号是 单数 的数值 的 和
+        //
+        //         第一步  定义这个数组
+        //         然后 我要 拿一个桶 来装 需要求的和
+        //         使用 for 循环 来 处理这个数组   找到 奇数序号 的值  并 加起来 放到 桶里
+//        var shuzu = [1, 2, 3, 4, 5, 6, 7];
+//        var box2 = 0;
+//        for (var i = 0; i < shuzu.length; i = i + 2) {
+//            box2 = box2 + shuzu[i];
+//        }
+//        //        当I=0的时候，shuzu[i]表示1.  box2 =0,左边的box2=1............
+//
+//        document.write('box2的值：' + box2 + '<br>');
 
-
-        //    qiuhe[0]
-        //    qiuhe[1]
-
-        // 这是 数组赋值
-        //    qiuhe[0]=10;
-
-
-        // 我有一个数组  [1,2,3,4,5,6,7]
-        // 我要计算 数组中 序号是 单数 的数值 的 和
-
-        // 第一步  定义这个数组
-        // 然后 我要 拿一个桶 来装 需要求的和
-        // 使用 for 循环 来 处理这个数组   找到 奇数序号 的值  并 加起来 放到 桶里
-        var shuzu = [1, 2, 3, 4, 5, 6, 7];
-        var box2 = 0;
-        for (var i = 0; i < shuzu.length; i = i + 2) {
-            box2 = shuzu[i] + i;
-        }
-        document.write('box2的值：' + box2 + '<br>');
-
-
-        var name_list = ['爸爸', '妈妈', '爷爷', '奶奶', '我', '弟弟', '妹妹'];
-        var hobby_list = ['打球', '做菜', '写字', '阅读', '旅游', '玩游戏', '画画'];
-
-        name_list.push('杨峰');
-        hobby_list.push('滑板');
-
-        var name = 0;
-        var hobby = 0;
-        for (var i = 0; i < name_list.length; i++) {
-            name = name_list[i];
-            hobby = hobby_list[i];
-            document.write(name + '的爱好是：' + hobby + '<br>');
-        }
-
-
-        //          显示每个人对应的爱好
-
-
-        var shuzi_list_1 = [3, 4, 7, 5, 8];
-        var shuzi_list_2 = [2, 7, 2, 8, 9];
-
-
-        var shuizi1 = 0;
-        shuizi2 = 0;
-        sum = 0;
-
-
-        for (var i = 0; i < shuzi_list_1.length; i++) {
-            shuizi1 = shuzi_list_1[i];
-            shuizi2 = shuzi_list_2[i];
-
-
-            sum = shuzi_list_1[i] + shuzi_list_2[i];
-
-
-            document.write(shuizi1 + '加上' + shuizi2 + '的和：' + sum + '<br>');
-        }
+        //
+        //        解题思路:
+        //            定义两个数组，给数组命名为name
+        //        list
+        //        和
+        //        hobby
+        //        list
+        //        分别拿两个空桶（命名为
+        //        name
+        //        hobby
+        //        )
+        //        过来装数组中的每一个元素。
+        //        使用for循环
+        //
+        //
+        //         依次循环    将name - list中的每一个元素赋值给name
+        //
+        //          依次循环     将hobby - list中的每一个元素赋值给hobby
+        //
+//
+//        var name_list = ['爸爸', '妈妈', '爷爷', '奶奶', '我', '弟弟', '妹妹'];
+//        var hobby_list = ['打球', '做菜', '写字', '阅读', '旅游', '玩游戏', '画画'];
+//
+//        name_list.push('杨峰');
+//        hobby_list.push('滑板');
+//
+//        var name = 0;
+//        var hobby = 0;
+//        for (var i = 0; i < name_list.length; i++) {
+//            name = name_list[i];
+//            hobby = hobby_list[i];
+//            document.write(name + '的爱好是：' + hobby + '<br>');
+//        }
+//
+//
+//        //          显示每个人对应的爱好
+//
+//
+//        var shuzi_list_1 = [3, 4, 7, 5, 8];
+//        var shuzi_list_2 = [2, 7, 2, 8, 9];
+//
+//
+//        var shuizi1 = 0;
+//        shuizi2 = 0;
+//        sum = 0;
+//
+//
+//        for (var i = 0; i < shuzi_list_1.length; i++) {
+//            shuizi1 = shuzi_list_1[i];
+//            shuizi2 = shuzi_list_2[i];
+//
+//
+//            sum = shuzi_list_1[i] + shuzi_list_2[i];
+//
+//
+//            document.write(shuizi1 + '加上' + shuizi2 + '的和：' + sum + '<br>');
+//        }
 
 
         //  第一题： 从 1开始 将 100及以内的所有的偶数  放入到一个数组中
@@ -91,102 +117,156 @@
 
         // 找出 数组中 所有的奇数 并 显示出来
 
-        //        var list = [4, 7, 8, 4, 5, 8, 665, 4, 32, 6575, 3, 22, 2, 325, 6, 7, 3];
-        //        var shuzuou=0;   shuzuou2=0
-        //        for (var i=0;i<list.length;i++){
-        //            document.write("第"+(i+1)+"次循环前：" + shuzuou +'<br>');
-        //            if (list[i]%2==1){
-        //                document.write("shuzuou被赋值");
-        //                shuzuou =list [i];
-        //
-        //            document.write(  shuzuou + '是奇数<br>');
-        //         } else{
-        //
-        //             list[i]%2==0;
-        //
-        //             document.write(  shuzuou + '是ou数<br>');
-        //         }
-        //
-        //
-        //        }
-
-
-        var list = [4, 7, 8, 4, 5, 8, 665, 4, 32, 6575, 3, 22, 2, 325, 6, 7, 3];
-        var shuzuou = 0;
-        shuzuou2 = 0;
-        for (var i = 0; i < list.length; i++) {
-            shuzuou = list[i];
-
-
-            if (list[i] % 2 == 1) {
-
-
-                document.write(shuzuou + '是奇数<br>');
-            } else {
-
-                list[i] % 2 == 0;
-
-                document.write(shuzuou + '是ou数<br>');
-            }
-
-
-        }
-
-
-        var list = [4, 7, 8, 4, 5, 8, 665, 4, 32, 6575, 3, 22, 2, 325, 6, 7, 3, 46];
-        var shuzuou = 0;
-        shuzuou2 = 0;
-        for (var i = 0; i < list.length; i++) {
-
-
-            if (list[i] % 2 == 1) {
-             var shuzuou = list[i];
-
-                document.write(shuzuou + '是奇数<br>');
-
-
-            } else {
-
-
-                shuzuou2 = list[i];
-                document.write(shuzuou2 + '是ou数<br>');
-            }
-
-
-        }
-
-
-        var list = [4, 7, 8, 4, 5, 8, 665, 4, 32, 6575, 3, 22, 2, 325, 6, 7, 3];
-        var box3 = 0;
-        for (var i = list.length - 5; i < list.length; i++) {
-            box3 = list[i] + box3;
-        }
-        document.write(box3 + '是和<br>');
-
+//
+//        定义一个数组
+//        命名为
+//        list
+//        拿一个空盒子过来装
+//        数组
+//        list中
+//        是奇数的数
+//        再拿一个空盒子来装
+//        数组
+//        list中是偶数的数
+//
+//        建立使用for循环，一个个依次判断好奇性，然后将数组中的每一个奇数或者偶数分别装入
+//        shuzuou或者shuzuou2中
+//        在for循环里写入If的条件噗判断
+//        当i % 2 == 0
+//        的时候，就将list[i]
+//        放入suzuou的桶中。......
+//
+//
+//        var
+//        list = [4, 7, 8, 4, 5, 8, 665, 4, 32, 6575, 3, 22, 2, 325, 6, 7, 3];
+//        var shuzuou = 0;
+//        shuzuou2 = 0;
+//        for (var i = 0; i < list.length; i++) {
+//            document.write("第" + (i + 1) + "次循环前：" + shuzuou + '<br>');
+//            if (list[i] % 2 == 1) {
+////                document.write("shuzuou被赋值");
+//                shuzuou = list [i];
+//
+//                document.write(shuzuou + '是奇数<br>');
+//            } else {
+//
+//                list[i] % 2 == 0;
+//
+//                document.write(shuzuou + '是ou数<br>');
+//            }
+//
+//
+//        }
+//
+//
+//        var list = [4, 7, 8, 4, 5, 8, 665, 4, 32, 6575, 3, 22, 2, 325, 6, 7, 3];
+//        var shuzuou = 0;
+//
+//        for (var i = 0; i < list.length; i++) {
+//            shuzuou = list[i];
+//
+//
+//            if (list[i] % 2 == 1) {
+//
+//
+//                document.write(shuzuou + '是奇数<br>');
+//            } else {
+//
+//                list[i] % 2 == 0;
+//
+//                document.write(shuzuou + '是ou数<br>');
+//            }
+//
+//
+//        }
+//
+//
+//        var list = [4, 7, 8, 4, 5, 8, 665, 4, 32, 6575, 3, 22, 2, 325, 6, 7, 3, 46];
+//        var shuzuou = 0;
+//        shuzuou2 = 0;
+//        for (var i = 0; i < list.length; i++) {
+//
+//
+//            if (list[i] % 2 == 1) {
+//                var shuzuou = list[i];
+//
+//                document.write(shuzuou + '是奇数<br>');
+//
+//
+//            } else {
+//
+//
+//                shuzuou2 = list[i];
+//                document.write(shuzuou2 + '是ou数<br>');
+//            }
+//        }
 
 //
+//        var list = [4, 7, 8, 4, 5, 8, 665, 4, 32, 6575, 3, 22, 2, 325, 6, 7, 3];
+//        var box3 = 0;
+//        for (var i = list.length - 5; i < list.length; i++) {
+//            box3 = list[i] + box3;
+//        }
+//        document.write(box3 + '是和<br>');
+//
+//
+//        var chengji_list = [4, 7, 8, 4, 5, 8, 33, 4, 32, 21, 3, 22, 2, 33, 6, 7, 3];
+//        var yuwen = 0;
+//        var shuxue = 0;
+//        var yingyu = 0;
+//
+//
+//        for (var i = 0; i < chengji_list.length; i++) {
+//            if (i % 3 == 0) {
+//                yuwen = yuwen + chengji_list[i];
+//            } else if (i % 3 == 1) {
+//                shuxue = shuxue + chengji_list[i];
+//            } else if (i % 3 == 2) {
+//                yingyu = yingyu + chengji_list[i];
+//            } else {
+//                document.write("不会执行");
+//            }
+//
+//
+//
+//        }
+//
+//
+//        document.write('语文成绩：' + yuwen + '<br>');
+//        document.write('数学成绩：' + shuxue + '<br>');
+//        document.write('英语成绩：' + yingyu + '<br>');
 
-        var chengji_list = [4, 7, 8, 4, 5, 8, 665, 4, 32, 6575, 3, 22, 2, 325, 6, 7, 3];
-        var yuwen=0;
-        var shuxue=0;
-        var yingyu=0;
 
-       var yuwen=chengji_list[i];
 
-        for(i=0;i<chengji_list.length;i++){
+
+
+
+
+
+
+
+
+ var chengji_list = [4, 7, 8, 4, 5, 8, 33, 4, 32, 21, 3, 22, 2, 33, 6, 7, 3]
+        var chengji1=0;
+        var chengji2=0;
+        var chengji3=0;
+        for(var i=0;i<chengji_list.length;i++){
             if(i%3==0){
-                yuwen=chengji_list[i];
-
-            }else
-                }
-
-
-
-
-
-
+                chengji1=chengji1+chengji_list[i];
+            }else if(i%3==1){
+                chengji2=chengji2+chengji_list[i];
+            }else if(i%3==2){
+                chengji3=chengji3+chengji_list[i];
+            }
+        }
+        document.write('语文成绩：' + chengji1+ '<br>');
+        document.write('数学成绩：' + chengji2 + '<br>');
+        document.write('英语成绩：' + chengji3+ '<br>');
     </script>
 </head>
 <body>
 </body>
 </html>
+
+
+
