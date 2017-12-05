@@ -10,66 +10,62 @@
 <div id="example"></div>
 <script type="text/babel">
 
-    function jia_shi(input1,input2) {
+    function jia_shi(input1, input2) {
 
-        var number=10;
-        var he=input1+input2+number;
+        var number = 10;
+
+        var he = input1 + input2 + number;
 
         return he;
 
     }
 
-  var number1=jia_shi(1,2);
+    var number1 = jia_shi(1, 2);
 
 
-
-
-    var numbers = [1, 2, 3, 4, 5,6,8];
+    var numbers = [1, 2, 3, 4, 5, 6, 8];
 
     function suan_qian(input1) {
 
-        var result=0;
+        var result = 0;
 
         for (var i = 0; i < input1.length; i++) {
-            result=result+ input1[i];
+            result = result + input1[i];
         }
-        return '共计：'+result+'元';
+        return '共计：' + result + '元';
 
     }
-jk
-
-   var qianshu= suan_qian(numbers);
-
-console.log(qianshu);
-
-    
-
-function ji(input3,input4,input5,input6){
-    var number3=12;
-    
-console.log('里面的number3',number3);
-    var ji=input3*input4*input5*input6*number3;
-    return ji;
-}
-
-console.log('外面的number3',number3);
-
-var number3=0;
-var number3=ji(3,4,5,6);
 
 
-    ReactDOM.render( 
+
+    var qianshu = suan_qian(numbers);
+
+    console.log(qianshu);
+
+
+    function ji(input3, input4, input5, input6) {
+        var number3 = 12;
+
+        console.log('里面的number3', number3);
+        var ji = input3 * input4 * input5 * input6 * number3;
+        return ji;
+    }
+
+    console.log('外面的number3', number3);
+
+    var number3 = 0;
+    var number3 = ji(3, 4, 5, 6);
+
+
+    ReactDOM.render(
             <div>
                 <div>{number3}</div>
-               
+
             </div>,
         document.getElementById('example')
     );
-</script>
-</body>
-</html>
 
-<!-- 
+
     // 变量名
     //数据类型
     //数组 是用中括号 [] 包起来的结构
@@ -83,13 +79,12 @@ var number3=ji(3,4,5,6);
 
     // 火火的年龄是1岁
 
-     for (var i = 0; i <10; i++) {
+    for (var i = 0; i < 10; i++) {
 
         console.log('火火');
 
 
     }
-
 
 
     console.log(names[0]);
@@ -99,8 +94,8 @@ var number3=ji(3,4,5,6);
             <div>
                 {
                     names.map(function (name, index) {
-              console.log(index);
-              console.log(name);
+                        console.log(index);
+                        console.log(name);
                         return <div key={index}>您好, {name}，您是第{index + 1}位!</div>
                     })
                 }
@@ -108,6 +103,8 @@ var number3=ji(3,4,5,6);
         document.getElementById('example')
     );
 
+
 </script>
 </body>
-</html> --> 
+</html>
+

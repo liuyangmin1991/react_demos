@@ -1,20 +1,267 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>二维数组</title>
-<script type="text/javascript">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>二维数组</title>
+    <script type="text/javascript">
 
-var myarr=new Array();  //先声明一维 
-for(var i=0;i<3;i++){   //一维长度为2
-   myarr[i]=new Array();  //再声明二维 
-   for(var j=0;j<6;j++){   //二维长度为3
-   myarr[i][j]=i*j;   // 赋值，每个数组元素的值为i+j
-   }
- }
+        var myarr = new Array();  //先声明一维
+        for (var i = 0; i < 3; i++) {   //一维长度为2
+            myarr[i] = new Array();  //再声明二维
+            for (var j = 0; j < 6; j++) {   //二维长度为3
+                myarr[i][j] = i * j;   // 赋值，每个数组元素的值为i+j
+            }
+        }
 
 
-</script>
+        //
+        //
+
+        //
+        function naichaxiaoliangA(x, y) {
+            var box1 = (x + y);
+            return box1;
+        }
+
+
+        var xiaoliang = [43, 24, 19, 37, 26, 53, 42, 37, 18, 39, 24, 25, 26, 27, 34, 21, 22, 33, 33, 77];
+        //        var danjia = [4, 5, 6];
+        //        var chengben = [2, 3, 4];
+
+        //第一种奶茶的总销量：;
+
+        //       var zongxiaoliangA=0;
+        //
+        //        for (var i = 0; i < xiaoliang.length; i=i+6) {
+        ////            var tong1=0;
+        ////            tong1=zongxiaoliang+xiaoliang[i]+xiaoliang[i+3];
+        //
+        //            var naicha1dianA = xiaoliang[i];
+        //            var naicha2dianA = xiaoliang[i+3];
+        //
+        //
+        //             zongxiaoliangA = zongxiaoliangA+xiaoliang[i]+xiaoliang[i+3]
+        //            document.write('奶茶1店A种奶茶总销量是：'+zongxiaoliangA+'<br>');
+        //
+        //        }
+        //
+
+
+        //
+
+        //        奶茶店三种口味的奶茶销量，单价 成本。
+        //        （1）：每种口味的奶茶总销量。
+        //        （2）：每个店的销售额。
+        //        (3):每个店的利润。
+        //
+
+
+        var xiaoliang = [43, 24, 19, 37, 26, 53, 42, 37, 18, 39, 24, 25, 26, 27, 34, 21, 22, 33];
+        var danjia = [4, 5, 6];
+        var chengben = [2, 3, 4];
+
+
+        //   43 + 37 + 42 + 39 + 26 + 21 + 33
+
+        var Ahaonaicha = 0;
+        var Bhaonaicha = 0;
+        var Chaonaicha = 0;
+
+
+        var Ahaonaicha_lirun = 0;
+        var Bhaonaicha_lirun = 0;
+        var Chaonaicha_lirun = 0;
+        var tiaoguo = 2;
+
+
+        for (var i = 0; i < xiaoliang.length; i++) {
+
+//            if (i < 6 || i > 8) {
+
+            if (i % 3 == 0) {
+                Ahaonaicha = xiaoliang[i] + Ahaonaicha;
+            } else if (i % 3 == 1) {
+                Bhaonaicha = xiaoliang[i] + Bhaonaicha;
+            } else if (i % 3 == 2) {
+                Chaonaicha = xiaoliang[i] + Chaonaicha;
+            }
+//            }
+        }
+        document.write('第一款奶茶销量：' + Ahaonaicha + '<br>');
+        document.write('第二款奶茶销量：' + Bhaonaicha + '<br>');
+        document.write('第三款奶茶销量：' + Chaonaicha + '<br>');
+
+
+        var Ahaonaicha = 0;
+        var Bhaonaicha = 0;
+        var Chaonaicha = 0;
+
+        var Ahaonaicha_lirun = 0;
+        var Bhaonaicha_lirun = 0;
+        var Chaonaicha_lirun = 0;
+        var tiaoguo = 2;
+
+        document.write('<br>');
+
+
+        for (var i = 0; i < xiaoliang.length; i++) {
+
+            if (i < 6 || i > 8) {
+
+                if (i % 3 == 0) {
+                    Ahaonaicha = xiaoliang[i] + Ahaonaicha;
+                } else if (i % 3 == 1) {
+                    Bhaonaicha = xiaoliang[i] + Bhaonaicha;
+                } else if (i % 3 == 2) {
+                    Chaonaicha = xiaoliang[i] + Chaonaicha;
+                }
+            }
+        }
+
+
+        document.write('第一款奶茶销量：' + Ahaonaicha + '<br>');
+        document.write('第二款奶茶销量：' + Bhaonaicha + '<br>');
+        document.write('第三款奶茶销量：' + Chaonaicha + '<br>');
+
+        document.write('<br>');
+
+
+        var Ahaonaicha = 0;
+        var Bhaonaicha = 0;
+        var Chaonaicha = 0;
+
+
+        var Ahaonaicha_lirun = 0;
+        var Bhaonaicha_lirun = 0;
+        var Chaonaicha_lirun = 0;
+        var tiaoguo = 2;
+
+
+        //        除去第三家店，所有店子奶茶的销量。计算方法如下：
+
+
+        for (var i = 0; i < xiaoliang.length; i++) {
+
+            if (i < 6 || i > 8) {
+                if (i % 3 == 0) {
+                    Ahaonaicha = xiaoliang[i] + Ahaonaicha;
+                } else if (i % 3 == 1) {
+                    Bhaonaicha = xiaoliang[i] + Bhaonaicha;
+                } else if (i % 3 == 2) {
+                    Chaonaicha = xiaoliang[i] + Chaonaicha;
+                }
+            }
+        }
+
+
+        document.write('第一款奶茶销量：' + Ahaonaicha + '<br>');
+        document.write('第二款奶茶销量：' + Bhaonaicha + '<br>');
+        document.write('第三款奶茶销量：' + Chaonaicha + '<br>');
+
+        document.write('<br>');
+
+
+        for (var i = 0; i < xiaoliang.length; i = i + 3) {
+
+            //  0  1  2
+            var Ahaonaicha_xiaoshoue = xiaoliang[i] * danjia[0];
+            var Bhaonaicha_xiaoshoue = xiaoliang[i + 1] * danjia[1];
+            var Chaonaicha_xiaoshoue = xiaoliang[i + 2] * danjia[2];
+
+            var zongxiaoshoue = Ahaonaicha_xiaoshoue + Bhaonaicha_xiaoshoue + Chaonaicha_xiaoshoue;
+
+            document.write('第' + (i / 3 + 1) + '个店铺的销售额 ' + zongxiaoshoue + '<br>');
+
+
+            Ahaonaicha_lirun = Ahaonaicha_xiaoshoue - xiaoliang[i] * chengben[0];
+            Bhaonaicha_lirun = Bhaonaicha_xiaoshoue - xiaoliang[i + 1] * chengben[1];
+            Chaonaicha_lirun = Chaonaicha_xiaoshoue - xiaoliang[i + 2] * chengben[2];
+
+            document.write('第' + (i / 3 + 1) + '个店铺A奶茶的利润 ' + Ahaonaicha_lirun + '<br>');
+            document.write('第' + (i / 3 + 1) + '个店铺B奶茶的利润 ' + Bhaonaicha_lirun + '<br>');
+            document.write('第' + (i / 3 + 1) + '个店铺c奶茶的利润 ' + Chaonaicha_lirun + '<br>');
+
+            document.write('<br>');
+
+        }
+
+        document.write('<br>');
+
+        var xiaoliang = [43, 24, 19, 37, 26, 53, 42, 37, 18, 39, 24, 25, 26, 27, 34, 21, 22, 33];
+        var box1 = 0;
+
+
+        for (var i = 0; i < xiaoliang.length; i = i + 3) {
+            if (i < 6 || i > 8) {
+
+                box1 = xiaoliang[i] + xiaoliang[i + 1] + xiaoliang[i + 2];
+
+                document.write('第' + (i / 3 + 1) + '个店铺奶茶的总销量 ' + box1 + '<br>');
+
+            } else {
+
+            }
+        }
+
+
+        var Ahaonaicha = 0;
+        var Bhaonaicha = 0;
+        var Chaonaicha = 0;
+
+        var xiaoliang = [43, 24, 19, 37, 26, 53, 42, 37, 18, 39, 24, 25, 26, 27, 34, 21, 22, 33];
+        for (var n = 1; n < 1 + xiaoliang.length / 3; n++) {
+//
+
+            document.write('<br>第' + n + '组数据为：<br>');
+
+            document.write(xiaoliang[3 * (n - 1)] + ',');
+            document.write(xiaoliang[3 * (n - 1) + 1] + ',');
+            document.write(xiaoliang[3 * (n - 1) + 2] + ',');
+
+
+            Ahaonaicha = xiaoliang[3 * (n - 1)] + Ahaonaicha;
+            Bhaonaicha = xiaoliang[3 * (n - 1) + 1] + Bhaonaicha;
+            Chaonaicha = xiaoliang[3 * (n - 1) + 2] + Bhaonaicha;
+        }
+        document.write('<br>第' + n + '组数据为：<br>');
+
+        document.write('<br>第一款奶茶销量：' + Ahaonaicha + '<br>');
+        document.write('第二款奶茶销量：' + Bhaonaicha + '<br>');
+        document.write('第三款奶茶销量：' + Chaonaicha + '<br>');
+
+
+
+
+
+        //        前面两个店子销量不看，只看后面的
+
+        var xiaoliang = [43, 24, 19,   37, 26, 53,   42, 37, 18,   39, 24, 25,   26, 27, 34, 21, 22, 33];
+
+        var box4 = 0;
+
+        for (var i=6; i < xiaoliang.length; i=i+3) {
+            if (i > 5) {
+                box4= xiaoliang[i]+box4;
+
+                document.write('<br>');
+
+                document.write('第3到'+(i/3+1)+'个店A款奶茶销量：' + box4 + '<br>');
+            }
+        }
+
+
+        var xiaoliang = [43, 24, 19,   37, 26, 53,   42, 37, 18,   39, 24, 25,   26, 27, 34, 21, 22, 33];
+        var box5=0;
+        for(var i=6;i<xiaoliang.length;i=i+3){
+            box5=xiaoliang[i]+box5;
+
+            document.write('<br>');
+
+            document.write('第3个店到第'+(i/3+1)+'个店A款奶茶销量：' + box5+ '<br>');
+        }
+
+
+    </script>
 </head>
 
 <body>

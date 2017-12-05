@@ -15,37 +15,55 @@
 
 //    函数 大苹果 例子：
 
-    // function dapingguo(x,y){
-    //     if (x>y){
-    //         return x;
-    //     }else if (x<y){
-    //         return y;
-    //     }else {
-    //         return x ;
-    //     }
-    //  }
+     function dapingguo(x,y){
+         if (x>y){
+             return x;
+         }else if (x<y){
+             return y;
+         }else {
+             return x ;
+         }
+      }
 
 
 
 
-     //    function dapingguo(x, y) {
-//        if (x < y) {
-//            return x;
-//        } else if (x < y) {
-//            return y;
-//        } else {
-//            return x;
-//        }
-//    }
-//
-//    var pingguo1 = dapingguo(3, 5);
-//
-//
-//    function chengji(x, y, z) {
-//        var box1 = x * y * z;
-//        return box1;
-//    }
-//    var box2 =chengji(2,3,5);
+         function dapingguo(x, y) {
+        if (x < y) {
+            return x;
+        } else if (x < y) {
+            return y;
+        } else {
+            return x;
+        }
+    }
+
+    var pingguo1 = dapingguo(3, 5);
+
+
+    function chengji(x, y, z) {
+        var box1 = x * y * z;
+        return box1;
+    }
+    var box2 =chengji(2,3,5);
+
+
+    document.write("数组定义：<br/>");
+    var A = [1,2,3,4,5];
+    document.write(A);//1,2,3,4,5
+    document.write("<br/>");
+    A[0] = 2;
+    document.write(A);//2,2,3,4,5
+    document.write("<br/>");
+    A[4] = 7;
+    document.write(A);//2,2,3,4,7
+    document.write("<br/>");
+    A[8] = 11;
+    document.write(A);//2,2,3,4,7,,,11
+    document.write("<br/>");
+    A = [3,4,5,6];
+    document.write(A);//
+    document.write("<br/>");
 
 
 </script>

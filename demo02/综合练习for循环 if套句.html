@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>if...else</title>
+    <script type="text/JavaScript">
+
+
+        var xiaoliang = [43, 24, 19, 37, 26, 53, 42, 37, 18, 39, 24, 25, 26, 27, 34, 21, 22, 33];
+
+
+        var dianxiaoliang = []
+        for (var i = 0; i < xiaoliang.length / 3; i++) {
+            dianxiaoliang[i] = [];
+            for (var j = 0; j < 3; j++) {
+                dianxiaoliang[i][j] = xiaoliang[3 * i + j];
+            }
+            document.write(dianxiaoliang[i])
+            document.write("<br/>")
+        }
+
+
+        document.write("<br/>")
+
+        var test_array = [123, 234, 345];
+
+        var array2 = [[123, 234], [345]]
+
+        document.write(test_array)
+        document.write("<br/>")
+        document.write(array2[0])
+        document.write("<br/>")
+        document.write(array2[1])
+
+        document.write("<br/>")
+        document.write("<br/>")
+
+        document.write(xiaoliang[3 * (3 - 1)])
+        document.write("<br/>")
+
+        document.write(dianxiaoliang[3][2])
+
+        document.write("<br/>")
+
+
+        document.write("<br/>")
+
+        //
+        //        1：奶茶店上半年销售额:
+        //        2：下半年销售额
+        //        3：第三个季度销售额
+        //
+        // 上半年销售额：
+
+        var xiaoshoue = [40000, 50000, 30000, 10000, 20000, 11000, 12000, 13000, 45000, 12300, 123450, 15000];
+
+        var box1 = 0;
+
+        for (var i = 0; i <= 5; i++) {
+            box1 = xiaoshoue[i] + box1;
+
+//            每一次循环的结果：
+//            document.write('上半年的奶茶销售总额：' + box1 + '<br>');  每一次
+        }
+        document.write('上半年的奶茶销售总额：' + box1 + '<br>');
+
+        document.write("<br/>")
+
+
+        //        下半年销售额
+
+        var xiaoshoue = [40000, 50000, 30000, 10000, 20000, 11000, 12000, 13000, 45000, 12300, 123450, 15000];
+
+        var box2 = 0;
+
+        for (var i = 6; i < xiaoshoue.length; i++) {
+
+            box2 = xiaoshoue[i] + box2;
+
+//            document.write('上半年的奶茶销售总额：' + box2 + '<br>');
+        }
+
+        document.write('下半年的奶茶销售总额：' + box2 + '<br>');
+
+
+        document.write("<br/>")
+
+
+        document.write("<br/>")
+
+
+        //        第三个季度销售额
+
+
+        var xiaoshoue = [40000, 50000, 30000,   10000, 20000, 11000,   12000, 13000, 45000,    12300, 123450, 15000];
+
+        var box3 = 0;
+
+        for (var i = 6; i < xiaoshoue.length; i=i+3) {
+            if (i >= 6 && i <= 8) {
+                box3 = xiaoshoue[i]+xiaoshoue[i+1]+xiaoshoue[i+2];
+            }
+        }
+        document.write('第三个季度的奶茶销售总额：' + box3 + '<br>');
+
+
+
+        document.write("<br/>")
+
+
+
+
+//        用一个for循环分别求出上半年和下半年的销售总额；
+
+        var xiaoshoue = [40000, 50000, 30000, 10000, 20000, 11000,
+            12000, 13000, 45000, 12300, 123450, 15000];
+
+        var box5 = 0;
+        var box6 =0;
+
+        for (var i = 0; i <= 5; i++) {
+
+            box5 = xiaoshoue[i] + box5;
+            box6 = xiaoshoue[i+6] + box6;
+        }
+
+        document.write('上半年的奶茶销售总额：' + box5 + '<br>');
+        document.write('下半年的奶茶销售总额：' + box6 + '<br>');
+
+
+
+        document.write("<br/>")
+
+
+
+
+
+
+        var xiaoshoue = [40000, 50000, 30000,   10000, 20000, 11000,   12000, 13000, 45000,    12300, 123450, 15000];
+
+        var box4 = 0;
+
+        for (var i = 6; i<=8; i++) {
+
+//            var A = xiaoshoue[i];
+//            var B = xiaoshoue[i + 1];
+//            var C = xiaoshoue[i + 2];
+//
+           box4 = xiaoshoue[i]+box4;
+        }
+
+        document.write('第三个季度的奶茶销售总额：' + box4 + '<br>');
+
+
+
+        document.write("<br/>")
+
+
+
+        var xiaoshoue2016 = [40000, 50000, 30000,   10000, 20000, 11000,   12000, 13000, 45000,    12300, 123450, 15000];
+
+        var xiaoshoue2015 = [30000, 20000, 10000,   40000, 50000, 41000,   312000, 23000, 45000,    72300, 923450, 45000];
+
+
+        var box6=0;   xiaoshoue2016[i]
+
+
+
+        for(var i=0; i<xiaoshoue.length; i++){
+
+            box6=xiaoshoue2016[i]-xiaoshoue2015[i]
+
+            document.write('第'+(i+1)+'月相差：' + box6 + '<br>');
+        }
+
+
+
+    </script>
+</head>
+
+<body>
+</body>
+</html>

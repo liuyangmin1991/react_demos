@@ -1,0 +1,288 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>if...else</title>
+    <script type="text/JavaScript">
+
+
+        //         我有一个数组  [1,2,3,4,5,6,7]
+        //         我要计算 数组中 所有数字 的 和
+        //
+        //         第一步  定义这个数组
+        //         然后 我要 拿一个桶 来装 需要求的和
+        //         使用 for 循环 来 处理这个数组
+        //         找到 每一个元素  并 加起来 放到 桶里
+        //
+        //                    [4,2,1,2,3,6,8]
+
+
+        var list = [4, 2, 1];
+        var box1 = 0;
+        for (var i = 0; i < list.length; i++) {
+            box1 = box1 + list[i];
+        }//        当i=0的时候，list[i]是4，box1=0;那么左边的box1是4，当list[i]是2，加上box1是4，所以左边的box1等于6..........
+
+
+        document.write('box1的值：' + box1 + '<br>');
+
+
+        //
+        //                    qiuhe[0]
+        //                    qiuhe[1]
+        //
+        //                 这是 数组赋值
+        //                    qiuhe[0]=10;
+        //
+        //
+        //                 我有一个数组  [1,2,3,4,5,6,7]
+        //                 我要计算 数组中 序号是 单数 的数值 的 和
+        //
+        //                 第一步  定义这个数组
+        //                 然后 我要 拿一个桶 来装 需要求的和
+        //                 使用 for 循环 来 处理这个数组   找到 奇数序号 的值  并 加起来 放到 桶里
+        var shuzu = [1, 2, 3, 4, 5, 6, 7];
+        var box2 = 0;
+        for (var i = 0; i < shuzu.length; i = i + 2) {
+            box2 = shuzu[i] + box2;
+        }
+
+        //        当I=0的时候，shuzu[i]表示1.  box2 =0,左边的box2=1............
+        //
+        document.write('box2的值：' + box2 + '<br>');
+
+        //
+        //                解题思路:
+        //                    定义两个数组，给数组命名为name
+        //                list
+        //                和
+        //                hobby
+        //                list
+        //                分别拿两个空桶（命名为
+        //                name
+        //                hobby
+        //                )
+        //                过来装数组中的每一个元素。
+        //                使用for循环
+        //
+        //
+        //                 依次循环    将name - list中的每一个元素赋值给name
+        //
+        //                  依次循环     将hobby - list中的每一个元素赋值给hobby
+
+
+        var name_list = ['爸爸', '妈妈', '爷爷', '奶奶', '我', '弟弟', '妹妹'];
+        var hobby_list = ['打球', '做菜', '写字', '阅读', '旅游', '玩游戏', '画画'];
+
+
+        var name = 0;
+        var hobby = 0;
+        for (i = 0; i < name_list.length; i++) {
+            var name = name_list[i];
+            var hobby = hobby_list[i];
+            document.write(name + '的爱好是：' + hobby + '<br>');
+        }
+
+
+        //
+        //
+        //        //          显示每个人对应的爱好
+        //
+        //
+
+
+        //            document.write(shuizi1 + '加上' + shuizi2 + '的和：' + sum + '<br>');
+        //        }
+
+        //
+        //          第一题： 从 1开始 将 100及以内的所有的偶数  放入到一个数组中
+        //
+        //          第一题： 从 1开始 将 100及以内的所有的奇数  放入到一个数组中
+        //
+        //
+        //         找出 数组中 所有的奇数 并 显示出来
+        //
+        //
+        //                定义一个数组
+        //                命名为
+        //                list
+        //                拿一个空盒子过来装
+        //                数组
+        //                list中
+        //                是奇数的数
+        //                再拿一个空盒子来装
+        //                数组
+        //                list中是偶数的数
+        //
+        //                建立使用for循环，一个个依次判断好奇性，然后将数组中的每一个奇数或者偶数分别装入
+        //                shuzuou或者shuzuou2中
+        //                在for循环里写入If的条件噗判断
+        //                当i % 2 == 0
+        //                的时候，就将list[i]
+        //                放入suzuou的桶中。......
+        //
+        //
+        var list = [4, 7, 8, 4, 5, 8, 665, 4, 32, 6575, 3, 22, 2, 325, 6, 7, 3];
+        var oushu = 0;
+        for (var i = 0; i < list.length; i++) {
+            oushu = list[i];
+            if (oushu % 2 == 0) {
+                document.write(oushu + '是偶数<br>');
+            } else {
+                document.write(oushu + '是奇数<br>');
+            }
+        }
+
+
+        //
+        //
+        //
+        //
+        //
+        //                document.write(shuzuou + '是偶数<br>');
+        //
+        //
+        //
+
+
+        //
+        //
+        //
+        //
+        //
+        //        var list = [4, 7, 8, 4, 5, 8, 665, 4, 32, 6575, 3, 22, 2, 325, 6, 7, 3];
+        //        var shuzuou = 0;
+        //
+        //
+
+
+        //
+        //
+        //        document.write(shuzuou + '是偶数<br>');
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //        var list = [4, 7, 8, 4, 5, 8, 665, 4, 32, 6575, 3, 22, 2, 325, 6, 7, 3, 46];
+        //
+        //
+
+
+        //
+        //                document.write(shuzuou2 + '是偶数<br>');
+
+
+        //
+        //        var list = [4, 7, 8, 4, 5, 8, 665, 4, 32, 6575, 3, 22, 2, 325, 6, 7, 3];
+        //
+        //
+        // document.write(box3 + '是和<br>');
+        //
+
+        //
+        //
+        //
+        //               算平均成绩
+        //
+        function pingjunfen(x, y, z) {
+            var fenshu = (x + y + z) / 3;
+            return fenshu;
+        }
+
+
+        var chengji_list = [4, 7, 8, 4, 5, 8, 33, 4, 32, 21, 3, 22, 2, 33, 6, 7, 3,88];
+
+        for (var i = 0; i < chengji_list.length; i = i + 3) {
+
+            var yuwen = chengji_list[i];
+
+            var shuxue = chengji_list[i+1] ;
+
+            var yingyu = chengji_list[i+2];
+
+
+            var box4 = pingjunfen(yuwen, shuxue, yingyu);
+
+
+
+            document.write('第'+(i/3+1)+'：' + box4+ '<br>');
+        }
+
+        //                document.write("不会执行");
+
+
+        //        document.write('数学成绩：' + shuxue + '<br>');
+        //        document.write('英语成绩：' + yingyu + '<br>');
+
+
+        //
+        //
+        //
+        //
+
+
+        //        var chengji_list = [4, 7, 8, 4, 5, 8, 33, 4, 32, 21, 3, 22, 2, 33, 6, 7, 3]
+        //
+        //
+
+
+        //
+        //
+        //        document.write('语文成绩：' + chengji1 + '<br>');
+        //        document.write('数学成绩：' + chengji2 + '<br>');
+        //        document.write('英语成绩：' + chengji3 + '<br>');
+        //
+        //
+        //
+
+
+        //
+        //        var chengji_list = [144, 125, 109, 89, 98, 117, 93, 82, 92, 111, 96, 87, 103, 109, 108, 105, 104, 101, 93, 119];
+        //        var chengji_list =[144,125,109,89,98, 117];
+
+
+        //
+        //            document.write('第' + (i / 2 + 1) + '个人的总分是：' + zongfen + '<br>');
+        //
+
+
+        //
+        //        var chengji_list = [144, 125, 109, 89, 98, 117, 93, 82, 92, 111, 96, 87, 103, 109, 108, 105, 104, 101, 93, 119, 115];
+        //
+        //
+        //
+        //
+        //
+        //
+        //        for (var i = 0; i < chengji_list.length; i = i + 3) {
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //            document.write('第' + (i / 3 + 1) + '个人的总分是：' + gerenzongfen + '<br>');
+
+
+        //                document.write('成绩不及格：D类<br>');
+
+
+        //            console.log(chengji_lis2);
+
+
+        //            document.write('第'+(i/2)+'个人的总分是：' + fenshu + '<br>');
+
+
+    </script>
+</head>
+<body>
+</body>
+</html>

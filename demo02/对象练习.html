@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>if...else</title>
+    <script type="text/JavaScript">
+
+
+        var xiaoshoue2016 = [40000, 50000, 30000, 10000, 20000, 11000, 12000, 13000, 45000, 12300, 123450, 15000];
+
+        var xiaoshoue2015 = [30000, 20000, 10000, 40000, 50000, 41000, 312000, 23000, 45000, 72300, 923450, 45000];
+
+        var duixiang = {"1月": 40111000, "2月": 500010, "3 月": 30000, "4 月": 10000, "5 月": 20000, "6 月": 11000};
+        //
+        document.write(JSON.stringify(duixiang));
+        document.write('<br>');
+        //        duixiang['1月'] = xiaoshoue2016[0];
+        duixiang['1月'] = xiaoshoue2016[1];
+        //        duixiang['3 月']= xiaoshoue2016[2]
+        //        duixiang['4 月']= xiaoshoue2016[3]
+        //        duixiang['5 月']= xiaoshoue2016[4]
+        //        duixiang['6 月']= xiaoshoue2016[5]
+        //
+        document.write(JSON.stringify(duixiang));
+        document.write('<b r>');
+        duixiang['3月'] = xiaoshoue2016[2]
+
+        document.write(JSON.stringify(duixiang));
+        document.write('<br>');
+
+
+        //
+        //        document.write('对象定义：<br>');
+        //        document.write(JSON.stringify(duixiang));
+        //        document.write('<br>');
+        //
+        //        document.write(duixiang['2月']);
+        //        document.write('<br>');
+
+
+        document.write('对象定义：<br>');
+        var yangmin = {"name": "杨敏"}
+        yangmin['name'] = "杨敏";
+        yangmin['sex'] = "女";
+        yangmin['name'] = "杨峰";
+
+
+        document.write('<br>');
+        document.write(JSON.stringify(yangmin));
+
+        var hunan = {
+            "name": "湖南省",
+            "children": {
+                "changsha": {
+                    "name": "长沙市",
+                    "zip": "410000",
+                    "zicaidan": {
+                        "liuyang": {
+                            "name": "浏阳市",
+                            "zip": "4103330"
+                        }
+                    }
+                }
+            }
+        };
+
+        var zhongguo = {"hunan": hunan};
+
+
+        //        document.write('<br>');
+        //        document.write(JSON.stringify(hunan));
+        //        document.write('<br>');
+        //        document.write(JSON.stringify(hunan['name']));//湖南省
+        //        document.write('<br>');
+        //        document.write(JSON.stringify(hunan['children']));//
+        //        document.write('<br>');
+        //        document.write(JSON.stringify(hunan['children']['changsha']));//
+        //        document.write('<br>');
+        //        document.write(JSON.stringify(zhongguo));//
+        //        document.write('<br>');
+        //
+        //        hunan['zip'] = "411111";
+        //        document.write('test<br>');
+        //        document.write(JSON.stringify(hunan['children']['changsha']['zip']));//
+        //        document.write('<br>');
+        //
+        //        hunan['children']['changsha']['zip'] = "400000";
+        //        document.write('test<br>');
+        //        document.write(JSON.stringify(hunan['children']['changsha']['zip']));//
+        //        document.write('test<br>');
+        //
+        //        hunan['children']['zhuzhou']['zip'] = "4888888";
+        //        //怎么拿到长沙的数据
+        //        document.write(JSON.stringify(hunan['children']['zhuzhou']['zip']));//
+
+
+        var myarray = ['a', 'b'];
+        var jingouxiaoxue = {
+            '第一个': 'a',
+            '第二个': 'b',
+            '第三个': {'第一个': 'aaa'},
+            '第四个': [{
+                'name': '杨敏',
+                'age': '26'
+            }, 'b'],
+            '第五个': 5,
+            '第六个': true,
+        };
+        document.write('test<br>');
+        document.write("aaa");//
+        document.write(JSON.stringify(jingouxiaoxue));//
+
+
+        var person = {
+            'name': '杨敏',
+            'age': '26'
+        };
+
+        var jingouxiaoxueA = {
+            "xiaozhang": "周期", "banji": "六个", '分别是': [{"yiban": "yige", "erban": "yige"}],
+            "laoshiliebiao": ['李老师', '邓老师', '王老师']
+        }
+
+
+    </script>
+</head>
+<body>
+</body>
+</html>
