@@ -5,23 +5,25 @@
     <title>二维数组</title>
     <script type="text/javascript">
 
-        var myarr = new Array();  //先声明一维
+        var myarr = [];  //先声明一维
         for (var i = 0; i < 3; i++) {   //一维长度为2
-            myarr[i] = new Array();  //再声明二维
-            for (var j = 0; j < 6; j++) {   //二维长度为3
-                myarr[i][j] = i * j;   // 赋值，每个数组元素的值为i+j
-            }
+            myarr[i] = [];  //再声明二维
+           // for (var j = 0; j < 6; j++) {   //二维长度为3
+            //    myarr[i][j] = i * j;   // 赋值，每个数组元素的值为i+j
+            //}
         }
+        console.log(myarr);
 
+        /*
 
         //
         //
 
         //
-        function naichaxiaoliangA(x, y) {
-            var box1 = (x + y);
-            return box1;
-        }
+////        function naichaxiaoliangA(x, y) {
+//////            var box1 = (x + y);
+////            return box1;
+//        }
 
 
         var xiaoliang = [43, 24, 19, 37, 26, 53, 42, 37, 18, 39, 24, 25, 26, 27, 34, 21, 22, 33, 33, 77];
@@ -48,17 +50,17 @@
 
 
         //
-
-        //        奶茶店三种口味的奶茶销量，单价 成本。
-        //        （1）：每种口味的奶茶总销量。
-        //        （2）：每个店的销售额。
-        //        (3):每个店的利润。
-        //
-
-
-        var xiaoliang = [43, 24, 19, 37, 26, 53, 42, 37, 18, 39, 24, 25, 26, 27, 34, 21, 22, 33];
-        var danjia = [4, 5, 6];
-        var chengben = [2, 3, 4];
+//
+//                奶茶店三种口味的奶茶销量，单价 成本。
+//                （1）：每种口味的奶茶总销量。
+//                （2）：每个店的销售额。
+//                (3):每个店的利润。
+//
+//
+////
+////        var xiaoliang = [43, 24, 19, 37, 26, 53, 42, 37, 18, 39, 24, 25, 26, 27, 34, 21, 22, 33];
+////        var danjia = [4, 5, 6];
+////        var chengben = [2, 3, 4];
 
 
         //   43 + 37 + 42 + 39 + 26 + 21 + 33
@@ -260,6 +262,7 @@
             document.write('第3个店到第'+(i/3+1)+'个店A款奶茶销量：' + box5+ '<br>');
         }
 
+*/
 
     </script>
 </head>
